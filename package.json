@@ -1,0 +1,26 @@
+{
+  "name": "playwright-e2e-testing",
+  "version": "1.0.0",
+  "description": "End-to-end test automation framework using Playwright with Page Object Model, covering login, cart, and checkout flows.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepika-nagarajan-git/playwright-e2e-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/deepika-nagarajan-git/playwright-e2e-testing/issues"
+  },
+  "homepage": "https://github.com/deepika-nagarajan-git/playwright-e2e-testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
