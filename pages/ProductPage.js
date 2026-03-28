@@ -3,7 +3,7 @@ export class ProductPage {
     this.page = page;
     this.sortDropdown = page.locator('[data-test="product-sort-container"]');
     this.cart = page.locator('[data-test="shopping-cart-link"]');
-    this.item = page.locator('[data-test="inventory-item-name"]', { hasText: 'Sauce Labs Onesie' });
+    this.item = page.locator('[data-test="inventory-item-name"]', { hasText: process.env.PRODUCT_NAME });
     this.addToCartBtn = page.locator('//*[@id="add-to-cart"]');
     this.price = page.locator('[data-test="inventory-item-price"]');
     this.removeBtn = page.locator('[data-test="remove"]');

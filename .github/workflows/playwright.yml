@@ -12,6 +12,7 @@ jobs:
     env:
       SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
       SAUCE_PASSWORD: ${{ secrets.SAUCE_PASSWORD }}
+      PRODUCT_NAME: ${{ secrets.PRODUCT_NAME }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
