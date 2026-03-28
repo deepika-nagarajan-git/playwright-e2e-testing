@@ -1,4 +1,6 @@
 import { test, expect } from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
 
 import { LoginPage } from '../pages/LoginPage';
 import { ProductPage } from '../pages/ProductPage';
@@ -14,7 +16,7 @@ test('Full E2E Flow - SauceDemo', async ({ page }) => {
 
   // Login
   await loginPage.goTo();
-   await loginPage.login('standard_user', 'secret_sauce');
+  await loginPage.login(process.env.SAUCE_USERNAME, process.env.SAUCE_PASSWORD);
   await loginPage.verifyLoginSuccess();
   // Ensure login success
   await expect(page.locator('.app_logo')).toBeVisible();
