@@ -9,7 +9,7 @@ module.exports = defineConfig({
 
   use: {
     baseURL: 'https://www.saucedemo.com/',
-    headless: false,
+    headless: true,
     slowMo: 500,
 
     trace: 'on',
