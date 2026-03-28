@@ -11,7 +11,6 @@ module.exports = defineConfig({
     baseURL: 'https://www.saucedemo.com/',
     headless: true,
     slowMo: 500,
-
     trace: 'on',
     screenshot: 'on',
     video: 'on',
