@@ -37,6 +37,19 @@ It covers login, product selection, cart validation, checkout, and order complet
 3. Run tests: npx playwright test
 
 ---
+## 🔐 Environment Variable Best Practices
+
+When configuring credentials, always use **project‑specific variable names** instead of generic ones like `USERNAME` or `PASSWORD`.
+
+- Operating systems (especially Windows) often set default environment variables such as `USERNAME` to your logged‑in account name.  
+- These system variables override values in `.env`, which can cause unexpected behavior (e.g., logging in with your Windows username instead of the intended test account).  
+
+### ✅ Recommended Setup
+Use namespaced variables in your `.env` file:
+SAUCE_USERNAME=your_username_here
+SAUCE_PASSWORD=your_password_here
+
+---
 
 ## 📸 Demo Flow
 - Navigate to SauceDemo login page.
